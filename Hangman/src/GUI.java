@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+import java.util.Random;
 /**
  *
  * @author Pete
@@ -30,8 +30,6 @@ public class GUI extends javax.swing.JFrame {
         jButton21 = new javax.swing.JButton();
         jButton28 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        lblTitle = new javax.swing.JLabel();
-        lblHiddenWord = new javax.swing.JLabel();
         btnA = new javax.swing.JButton();
         btnB = new javax.swing.JButton();
         btnC = new javax.swing.JButton();
@@ -60,6 +58,9 @@ public class GUI extends javax.swing.JFrame {
         btnU = new javax.swing.JButton();
         btnStart = new javax.swing.JButton();
         lblTries = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        lblWord = new javax.swing.JLabel();
+        lblTitle = new javax.swing.JLabel();
 
         jButton29.setText("A");
 
@@ -73,101 +74,106 @@ public class GUI extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblTitle.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblTitle.setText("Welcome to Hangman");
-        jPanel1.add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, -1, -1));
-
-        lblHiddenWord.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        lblHiddenWord.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblHiddenWord.setText("X X X X X X X X  X X X X X X X X");
-        jPanel1.add(lblHiddenWord, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, -1, -1));
-
         btnA.setText("A");
+        btnA.setEnabled(false);
         btnA.setMaximumSize(new java.awt.Dimension(42, 42));
         btnA.setMinimumSize(new java.awt.Dimension(42, 42));
         btnA.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnA, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, -1, -1));
 
         btnB.setText("B");
+        btnB.setEnabled(false);
         btnB.setMaximumSize(new java.awt.Dimension(42, 42));
         btnB.setMinimumSize(new java.awt.Dimension(42, 42));
         btnB.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnB, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, -1, -1));
 
         btnC.setText("C");
+        btnC.setEnabled(false);
         btnC.setMaximumSize(new java.awt.Dimension(42, 42));
         btnC.setMinimumSize(new java.awt.Dimension(42, 42));
         btnC.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnC, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 110, -1, -1));
 
         btnD.setText("D");
+        btnD.setEnabled(false);
         btnD.setMaximumSize(new java.awt.Dimension(42, 42));
         btnD.setMinimumSize(new java.awt.Dimension(42, 42));
         btnD.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnD, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 110, -1, -1));
 
         btnE.setText("E");
+        btnE.setEnabled(false);
         btnE.setMaximumSize(new java.awt.Dimension(42, 42));
         btnE.setMinimumSize(new java.awt.Dimension(42, 42));
         btnE.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnE, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 110, -1, -1));
 
         btnF.setText("F");
+        btnF.setEnabled(false);
         btnF.setMaximumSize(new java.awt.Dimension(42, 42));
         btnF.setMinimumSize(new java.awt.Dimension(42, 42));
         btnF.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnF, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 110, -1, -1));
 
         btnG.setText("G");
+        btnG.setEnabled(false);
         btnG.setMaximumSize(new java.awt.Dimension(42, 42));
         btnG.setMinimumSize(new java.awt.Dimension(42, 42));
         btnG.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnG, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 110, -1, -1));
 
         btnH.setText("H");
+        btnH.setEnabled(false);
         btnH.setMaximumSize(new java.awt.Dimension(42, 42));
         btnH.setMinimumSize(new java.awt.Dimension(42, 42));
         btnH.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnH, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 110, -1, -1));
 
         btnI.setText("I");
+        btnI.setEnabled(false);
         btnI.setMaximumSize(new java.awt.Dimension(42, 42));
         btnI.setMinimumSize(new java.awt.Dimension(42, 42));
         btnI.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnI, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 110, -1, -1));
 
         btnJ.setText("J");
+        btnJ.setEnabled(false);
         btnJ.setMaximumSize(new java.awt.Dimension(42, 42));
         btnJ.setMinimumSize(new java.awt.Dimension(42, 42));
         btnJ.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnJ, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 110, -1, -1));
 
         btnK.setText("K");
+        btnK.setEnabled(false);
         btnK.setMaximumSize(new java.awt.Dimension(42, 42));
         btnK.setMinimumSize(new java.awt.Dimension(42, 42));
         btnK.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnK, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, -1, -1));
 
         btnL.setText("L");
+        btnL.setEnabled(false);
         btnL.setMaximumSize(new java.awt.Dimension(42, 42));
         btnL.setMinimumSize(new java.awt.Dimension(42, 42));
         btnL.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnL, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, -1, -1));
 
         btnM.setText("M");
+        btnM.setEnabled(false);
         btnM.setMaximumSize(new java.awt.Dimension(42, 42));
         btnM.setMinimumSize(new java.awt.Dimension(42, 42));
         btnM.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnM, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, -1, -1));
 
         btnN.setText("N");
+        btnN.setEnabled(false);
         btnN.setMaximumSize(new java.awt.Dimension(42, 42));
         btnN.setMinimumSize(new java.awt.Dimension(42, 42));
         btnN.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnN, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, -1, -1));
 
         btnO.setText("O");
+        btnO.setEnabled(false);
         btnO.setMaximumSize(new java.awt.Dimension(42, 42));
         btnO.setMinimumSize(new java.awt.Dimension(42, 42));
         btnO.setPreferredSize(new java.awt.Dimension(46, 46));
@@ -179,24 +185,28 @@ public class GUI extends javax.swing.JFrame {
         jPanel1.add(btnO, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 170, -1, -1));
 
         btnP.setText("P");
+        btnP.setEnabled(false);
         btnP.setMaximumSize(new java.awt.Dimension(42, 42));
         btnP.setMinimumSize(new java.awt.Dimension(42, 42));
         btnP.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnP, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 170, -1, -1));
 
         btnQ.setText("Q");
+        btnQ.setEnabled(false);
         btnQ.setMaximumSize(new java.awt.Dimension(42, 42));
         btnQ.setMinimumSize(new java.awt.Dimension(42, 42));
         btnQ.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnQ, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 170, -1, -1));
 
         btnR.setText("R");
+        btnR.setEnabled(false);
         btnR.setMaximumSize(new java.awt.Dimension(42, 42));
         btnR.setMinimumSize(new java.awt.Dimension(42, 42));
         btnR.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnR, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 170, -1, -1));
 
         btnS.setText("S");
+        btnS.setEnabled(false);
         btnS.setMaximumSize(new java.awt.Dimension(42, 42));
         btnS.setMinimumSize(new java.awt.Dimension(42, 42));
         btnS.setPreferredSize(new java.awt.Dimension(46, 46));
@@ -204,42 +214,49 @@ public class GUI extends javax.swing.JFrame {
 
         btnT.setText("T");
         btnT.setActionCommand("V");
+        btnT.setEnabled(false);
         btnT.setMaximumSize(new java.awt.Dimension(42, 42));
         btnT.setMinimumSize(new java.awt.Dimension(42, 42));
         btnT.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnT, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 170, -1, -1));
 
         btnV.setText("V");
+        btnV.setEnabled(false);
         btnV.setMaximumSize(new java.awt.Dimension(42, 42));
         btnV.setMinimumSize(new java.awt.Dimension(42, 42));
         btnV.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnV, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 230, -1, -1));
 
         btnW.setText("W");
+        btnW.setEnabled(false);
         btnW.setMaximumSize(new java.awt.Dimension(42, 42));
         btnW.setMinimumSize(new java.awt.Dimension(42, 42));
         btnW.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnW, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 230, -1, -1));
 
         btnX.setText("X");
+        btnX.setEnabled(false);
         btnX.setMaximumSize(new java.awt.Dimension(42, 42));
         btnX.setMinimumSize(new java.awt.Dimension(42, 42));
         btnX.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnX, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 230, -1, -1));
 
         btnY.setText("Y");
+        btnY.setEnabled(false);
         btnY.setMaximumSize(new java.awt.Dimension(42, 42));
         btnY.setMinimumSize(new java.awt.Dimension(42, 42));
         btnY.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnY, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 230, -1, -1));
 
         btnZ.setText("Z");
+        btnZ.setEnabled(false);
         btnZ.setMaximumSize(new java.awt.Dimension(42, 42));
         btnZ.setMinimumSize(new java.awt.Dimension(42, 42));
         btnZ.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnZ, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 230, -1, -1));
 
         btnU.setText("U");
+        btnU.setEnabled(false);
         btnU.setMaximumSize(new java.awt.Dimension(42, 42));
         btnU.setMinimumSize(new java.awt.Dimension(42, 42));
         btnU.setPreferredSize(new java.awt.Dimension(46, 46));
@@ -259,6 +276,22 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setOpaque(true);
         lblTries.setVisible(false);
         jPanel1.add(lblTries, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
+        jPanel2.setLayout(new java.awt.BorderLayout());
+
+        lblWord.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        lblWord.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblWord.setText("XXXXXXXXXXXXXXXX");
+        lblWord.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblWord.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(lblWord, java.awt.BorderLayout.CENTER);
+
+        lblTitle.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblTitle.setText("Welcome to Hangman");
+        jPanel2.add(lblTitle, java.awt.BorderLayout.PAGE_START);
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, 370, 90));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -282,8 +315,48 @@ public class GUI extends javax.swing.JFrame {
 
     private void btnStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStartActionPerformed
         
+        // enable tries counter and keyboard
         lblTries.setVisible(true);
+        btnA.setEnabled(true);
+        btnB.setEnabled(true);
+        btnC.setEnabled(true);
+        btnD.setEnabled(true);
+        btnE.setEnabled(true);
+        btnF.setEnabled(true);
+        btnG.setEnabled(true);
+        btnH.setEnabled(true);
+        btnI.setEnabled(true);
+        btnJ.setEnabled(true);
+        btnK.setEnabled(true);
+        btnL.setEnabled(true);
+        btnM.setEnabled(true);
+        btnN.setEnabled(true);
+        btnO.setEnabled(true);
+        btnP.setEnabled(true);
+        btnQ.setEnabled(true);
+        btnR.setEnabled(true);
+        btnS.setEnabled(true);
+        btnT.setEnabled(true);
+        btnU.setEnabled(true);
+        btnV.setEnabled(true);
+        btnW.setEnabled(true);
+        btnX.setEnabled(true);
+        btnY.setEnabled(true);
+        btnZ.setEnabled(true);
         
+        // array of possible words
+        String[] words = {"PROGRAMMING", "OAKLAND", "UNIVERSITY", "SOFTWARE", "ENGINEERING"};
+        
+        //choose random word from list
+        Random gen = new Random();
+        String word = words[gen.nextInt(4)];
+        
+        // set up lblWord
+        String hiddenWord = "";
+        for(int i=0; i<word.length(); i++){
+            hiddenWord+= "-";
+        }
+        lblWord.setText(hiddenWord);
     }//GEN-LAST:event_btnStartActionPerformed
 
     /**
@@ -353,8 +426,9 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton29;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel lblHiddenWord;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lblTitle;
     private javax.swing.JLabel lblTries;
+    private javax.swing.JLabel lblWord;
     // End of variables declaration//GEN-END:variables
 }
