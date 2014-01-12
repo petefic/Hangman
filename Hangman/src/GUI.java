@@ -15,9 +15,6 @@ public class GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton29 = new javax.swing.JButton();
-        jButton21 = new javax.swing.JButton();
-        jButton28 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         btnA = new javax.swing.JButton();
         btnB = new javax.swing.JButton();
@@ -52,12 +49,6 @@ public class GUI extends javax.swing.JFrame {
         btnStop = new javax.swing.JButton();
         btnO = new javax.swing.JButton();
 
-        jButton29.setText("A");
-
-        jButton21.setText("A");
-
-        jButton28.setText("A");
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBounds(new java.awt.Rectangle(618, 235, 235, 235));
         setResizable(false);
@@ -69,6 +60,11 @@ public class GUI extends javax.swing.JFrame {
         btnA.setMaximumSize(new java.awt.Dimension(42, 42));
         btnA.setMinimumSize(new java.awt.Dimension(42, 42));
         btnA.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnA, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, -1, -1));
 
         btnB.setText("B");
@@ -76,6 +72,11 @@ public class GUI extends javax.swing.JFrame {
         btnB.setMaximumSize(new java.awt.Dimension(42, 42));
         btnB.setMinimumSize(new java.awt.Dimension(42, 42));
         btnB.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnB, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, -1, -1));
 
         btnC.setText("C");
@@ -83,6 +84,11 @@ public class GUI extends javax.swing.JFrame {
         btnC.setMaximumSize(new java.awt.Dimension(42, 42));
         btnC.setMinimumSize(new java.awt.Dimension(42, 42));
         btnC.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnC, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 110, -1, -1));
 
         btnD.setText("D");
@@ -342,7 +348,6 @@ public class GUI extends javax.swing.JFrame {
         String word = words[gen.nextInt(4)];
         
         // set up lblWord
-        String hiddenWord = "";
         for(int i=0; i<word.length(); i++){
             hiddenWord+= "-";
         }
@@ -391,6 +396,28 @@ public class GUI extends javax.swing.JFrame {
         // reset lblWord
         lblWord.setText("XXXXXXXXXXXXXXXX");
     }//GEN-LAST:event_btnStopActionPerformed
+
+    private void btnAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAActionPerformed
+        
+        // increase tries counter
+        tries++;
+        lblTries.setText(tries + " tries");
+        
+    }//GEN-LAST:event_btnAActionPerformed
+
+    private void btnBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBActionPerformed
+                
+        // increase tries counter
+        tries++;
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnBActionPerformed
+
+    private void btnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCActionPerformed
+                
+        // increase tries counter
+        tries++;
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnCActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -453,13 +480,13 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton btnX;
     private javax.swing.JButton btnY;
     private javax.swing.JButton btnZ;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton28;
-    private javax.swing.JButton jButton29;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lblTitle;
     private javax.swing.JLabel lblTries;
     private javax.swing.JLabel lblWord;
     // End of variables declaration//GEN-END:variables
+    private String hiddenWord = "";
+    private int tries = 0;
 }
+
