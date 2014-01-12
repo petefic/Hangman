@@ -61,6 +61,7 @@ public class GUI extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         lblWord = new javax.swing.JLabel();
         lblTitle = new javax.swing.JLabel();
+        btnStop = new javax.swing.JButton();
 
         jButton29.setText("A");
 
@@ -293,6 +294,15 @@ public class GUI extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, 370, 90));
 
+        btnStop.setLabel("Stop Game");
+        btnStop.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnStopActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnStop, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 290, -1, -1));
+        btnStop.setVisible(false);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -357,7 +367,50 @@ public class GUI extends javax.swing.JFrame {
             hiddenWord+= "-";
         }
         lblWord.setText(hiddenWord);
+        
+        // hide start button, show stop button
+        btnStart.setVisible(false);
+        btnStop.setVisible(true);
     }//GEN-LAST:event_btnStartActionPerformed
+
+    private void btnStopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStopActionPerformed
+        
+        // hide stop button, tries and show start button
+        btnStart.setVisible(true);
+        btnStop.setVisible(false);
+        lblTries.setVisible(false);
+        
+        // disable keyboard
+        btnA.setEnabled(false);
+        btnB.setEnabled(false);
+        btnC.setEnabled(false);
+        btnD.setEnabled(false);
+        btnE.setEnabled(false);
+        btnF.setEnabled(false);
+        btnG.setEnabled(false);
+        btnH.setEnabled(false);
+        btnI.setEnabled(false);
+        btnJ.setEnabled(false);
+        btnK.setEnabled(false);
+        btnL.setEnabled(false);
+        btnM.setEnabled(false);
+        btnN.setEnabled(false);
+        btnO.setEnabled(false);
+        btnP.setEnabled(false);
+        btnQ.setEnabled(false);
+        btnR.setEnabled(false);
+        btnS.setEnabled(false);
+        btnT.setEnabled(false);
+        btnU.setEnabled(false);
+        btnV.setEnabled(false);
+        btnW.setEnabled(false);
+        btnX.setEnabled(false);
+        btnY.setEnabled(false);
+        btnZ.setEnabled(false);
+        
+        // reset lblWord
+        lblWord.setText("XXXXXXXXXXXXXXXX");
+    }//GEN-LAST:event_btnStopActionPerformed
 
     /**
      * @param args the command line arguments
@@ -415,6 +468,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton btnR;
     private javax.swing.JButton btnS;
     private javax.swing.JButton btnStart;
+    private javax.swing.JButton btnStop;
     private javax.swing.JButton btnT;
     private javax.swing.JButton btnU;
     private javax.swing.JButton btnV;
