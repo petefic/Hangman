@@ -1,18 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 import java.util.Random;
-/**
- *
- * @author Pete
- */
+
 public class GUI extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Screen1
-     */
     public GUI() {
         initComponents();
     }
@@ -44,7 +33,6 @@ public class GUI extends javax.swing.JFrame {
         btnL = new javax.swing.JButton();
         btnM = new javax.swing.JButton();
         btnN = new javax.swing.JButton();
-        btnO = new javax.swing.JButton();
         btnP = new javax.swing.JButton();
         btnQ = new javax.swing.JButton();
         btnR = new javax.swing.JButton();
@@ -62,6 +50,7 @@ public class GUI extends javax.swing.JFrame {
         lblWord = new javax.swing.JLabel();
         lblTitle = new javax.swing.JLabel();
         btnStop = new javax.swing.JButton();
+        btnO = new javax.swing.JButton();
 
         jButton29.setText("A");
 
@@ -172,18 +161,6 @@ public class GUI extends javax.swing.JFrame {
         btnN.setMinimumSize(new java.awt.Dimension(42, 42));
         btnN.setPreferredSize(new java.awt.Dimension(46, 46));
         jPanel1.add(btnN, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, -1, -1));
-
-        btnO.setText("O");
-        btnO.setEnabled(false);
-        btnO.setMaximumSize(new java.awt.Dimension(42, 42));
-        btnO.setMinimumSize(new java.awt.Dimension(42, 42));
-        btnO.setPreferredSize(new java.awt.Dimension(46, 46));
-        btnO.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnOActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnO, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 170, -1, -1));
 
         btnP.setText("P");
         btnP.setEnabled(false);
@@ -303,6 +280,13 @@ public class GUI extends javax.swing.JFrame {
         jPanel1.add(btnStop, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 290, -1, -1));
         btnStop.setVisible(false);
 
+        btnO.setText("O");
+        btnO.setEnabled(false);
+        btnO.setMaximumSize(new java.awt.Dimension(42, 42));
+        btnO.setMinimumSize(new java.awt.Dimension(42, 42));
+        btnO.setPreferredSize(new java.awt.Dimension(46, 46));
+        jPanel1.add(btnO, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 170, -1, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -318,10 +302,6 @@ public class GUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnOActionPerformed
 
     private void btnStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStartActionPerformed
         
@@ -412,9 +392,6 @@ public class GUI extends javax.swing.JFrame {
         lblWord.setText("XXXXXXXXXXXXXXXX");
     }//GEN-LAST:event_btnStopActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
