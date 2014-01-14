@@ -394,7 +394,7 @@ public class GUI extends javax.swing.JFrame {
                 btnStopActionPerformed(evt);
             }
         });
-        jPanel1.add(btnStop, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 290, -1, -1));
+        jPanel1.add(btnStop, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, -1));
         btnStop.setVisible(false);
 
         btnO.setText("O");
