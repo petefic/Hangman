@@ -50,6 +50,7 @@ public class GUI extends javax.swing.JFrame {
         btnO = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Hangman");
         setBounds(new java.awt.Rectangle(618, 235, 235, 235));
         setResizable(false);
 
@@ -460,7 +461,7 @@ public class GUI extends javax.swing.JFrame {
         
         //choose random word from list
         Random gen = new Random();
-        String word = words[gen.nextInt(4)];
+        word = words[gen.nextInt(4)];
         
         // set up lblWord
         for(int i=0; i<word.length(); i++){
@@ -508,8 +509,10 @@ public class GUI extends javax.swing.JFrame {
         btnY.setEnabled(false);
         btnZ.setEnabled(false);
         
-        // reset lblWord and tries
+        // reset word and tries
         lblWord.setText("XXXXXXXXXXXXXXXX");
+        hiddenWord = "";
+        word = "";
         tries = 0;
         lblTries.setText(tries + " tries");
     }//GEN-LAST:event_btnStopActionPerformed
@@ -521,7 +524,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("A");       
+        searchWord('A');       
     }//GEN-LAST:event_btnAActionPerformed
 
     private void btnBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBActionPerformed
@@ -531,7 +534,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("B");
+        searchWord('B');
     }//GEN-LAST:event_btnBActionPerformed
 
     private void btnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCActionPerformed
@@ -541,7 +544,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("C");        
+        searchWord('C');        
     }//GEN-LAST:event_btnCActionPerformed
 
     private void btnDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDActionPerformed
@@ -550,7 +553,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("D");
+        searchWord('D');
     }//GEN-LAST:event_btnDActionPerformed
 
     private void btnEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEActionPerformed
@@ -559,7 +562,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("E");
+        searchWord('E');
     }//GEN-LAST:event_btnEActionPerformed
 
     private void btnFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFActionPerformed
@@ -568,7 +571,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("F");
+        searchWord('F');
     }//GEN-LAST:event_btnFActionPerformed
 
     private void btnGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGActionPerformed
@@ -577,7 +580,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("G");
+        searchWord('G');
     }//GEN-LAST:event_btnGActionPerformed
 
     private void btnHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHActionPerformed
@@ -586,7 +589,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("H");
+        searchWord('H');
     }//GEN-LAST:event_btnHActionPerformed
 
     private void btnIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIActionPerformed
@@ -595,7 +598,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("I");
+        searchWord('I');
     }//GEN-LAST:event_btnIActionPerformed
 
     private void btnJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJActionPerformed
@@ -604,7 +607,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("J");
+        searchWord('J');
     }//GEN-LAST:event_btnJActionPerformed
 
     private void btnKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKActionPerformed
@@ -613,7 +616,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("K");
+        searchWord('K');
     }//GEN-LAST:event_btnKActionPerformed
 
     private void btnLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLActionPerformed
@@ -622,7 +625,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("L");
+        searchWord('L');
     }//GEN-LAST:event_btnLActionPerformed
 
     private void btnMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMActionPerformed
@@ -631,7 +634,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("M");
+        searchWord('M');
     }//GEN-LAST:event_btnMActionPerformed
 
     private void btnNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNActionPerformed
@@ -640,7 +643,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("N");
+        searchWord('N');
     }//GEN-LAST:event_btnNActionPerformed
 
     private void btnOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOActionPerformed
@@ -649,7 +652,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("O");
+        searchWord('O');
     }//GEN-LAST:event_btnOActionPerformed
 
     private void btnPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPActionPerformed
@@ -658,7 +661,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("P");
+        searchWord('P');
     }//GEN-LAST:event_btnPActionPerformed
 
     private void btnQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQActionPerformed
@@ -667,7 +670,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("Q");
+        searchWord('Q');
     }//GEN-LAST:event_btnQActionPerformed
 
     private void btnRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRActionPerformed
@@ -676,7 +679,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("R");
+        searchWord('R');
     }//GEN-LAST:event_btnRActionPerformed
 
     private void btnSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSActionPerformed
@@ -685,7 +688,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("S");
+        searchWord('S');
     }//GEN-LAST:event_btnSActionPerformed
 
     private void btnTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTActionPerformed
@@ -694,7 +697,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("T");
+        searchWord('T');
     }//GEN-LAST:event_btnTActionPerformed
 
     private void btnUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUActionPerformed
@@ -703,7 +706,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("U");
+        searchWord('U');
     }//GEN-LAST:event_btnUActionPerformed
 
     private void btnVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVActionPerformed
@@ -712,7 +715,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("V");
+        searchWord('V');
     }//GEN-LAST:event_btnVActionPerformed
 
     private void btnWActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnWActionPerformed
@@ -721,7 +724,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("W");
+        searchWord('W');
     }//GEN-LAST:event_btnWActionPerformed
 
     private void btnXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnXActionPerformed
@@ -730,7 +733,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("X");
+        searchWord('X');
     }//GEN-LAST:event_btnXActionPerformed
 
     private void btnYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnYActionPerformed
@@ -739,7 +742,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("Y");
+        searchWord('Y');
     }//GEN-LAST:event_btnYActionPerformed
 
     private void btnZActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnZActionPerformed
@@ -748,13 +751,26 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setText(tries + " tries");
         
         //search word for letter
-        searchWord("Z");
+        searchWord('Z');
     }//GEN-LAST:event_btnZActionPerformed
 
-    private String searchWord(String letter){
-        String word = lblWord.getText();
+    private String searchWord(char letter){
+        
+        for(int i =0; i<word.length(); i++){
+            if (word.charAt(i) == letter){
+                hiddenWord = changeCharInPosition(i, letter, hiddenWord);
+            }
+        }
+        
+        lblWord.setText(hiddenWord);
         
         return word;
+    }
+    
+    private String changeCharInPosition(int position, char ch, String str){
+        char[] charArray = str.toCharArray();
+        charArray[position] = ch;
+        return new String(charArray);
     }
     
     public static void main(String args[]) {
@@ -825,6 +841,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel lblWord;
     // End of variables declaration//GEN-END:variables
     private String hiddenWord = "";
+    private String word = "";
     private int tries = 0;
 }
 
