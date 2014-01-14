@@ -96,6 +96,11 @@ public class GUI extends javax.swing.JFrame {
         btnD.setMaximumSize(new java.awt.Dimension(42, 42));
         btnD.setMinimumSize(new java.awt.Dimension(42, 42));
         btnD.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnD.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnD, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 110, -1, -1));
 
         btnE.setText("E");
@@ -103,6 +108,11 @@ public class GUI extends javax.swing.JFrame {
         btnE.setMaximumSize(new java.awt.Dimension(42, 42));
         btnE.setMinimumSize(new java.awt.Dimension(42, 42));
         btnE.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnE.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnE, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 110, -1, -1));
 
         btnF.setText("F");
@@ -110,6 +120,11 @@ public class GUI extends javax.swing.JFrame {
         btnF.setMaximumSize(new java.awt.Dimension(42, 42));
         btnF.setMinimumSize(new java.awt.Dimension(42, 42));
         btnF.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnF, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 110, -1, -1));
 
         btnG.setText("G");
@@ -117,6 +132,11 @@ public class GUI extends javax.swing.JFrame {
         btnG.setMaximumSize(new java.awt.Dimension(42, 42));
         btnG.setMinimumSize(new java.awt.Dimension(42, 42));
         btnG.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnG.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnG, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 110, -1, -1));
 
         btnH.setText("H");
@@ -124,6 +144,11 @@ public class GUI extends javax.swing.JFrame {
         btnH.setMaximumSize(new java.awt.Dimension(42, 42));
         btnH.setMinimumSize(new java.awt.Dimension(42, 42));
         btnH.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnH.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnH, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 110, -1, -1));
 
         btnI.setText("I");
@@ -131,6 +156,11 @@ public class GUI extends javax.swing.JFrame {
         btnI.setMaximumSize(new java.awt.Dimension(42, 42));
         btnI.setMinimumSize(new java.awt.Dimension(42, 42));
         btnI.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnI.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnI, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 110, -1, -1));
 
         btnJ.setText("J");
@@ -138,6 +168,11 @@ public class GUI extends javax.swing.JFrame {
         btnJ.setMaximumSize(new java.awt.Dimension(42, 42));
         btnJ.setMinimumSize(new java.awt.Dimension(42, 42));
         btnJ.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnJ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnJ, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 110, -1, -1));
 
         btnK.setText("K");
@@ -145,6 +180,11 @@ public class GUI extends javax.swing.JFrame {
         btnK.setMaximumSize(new java.awt.Dimension(42, 42));
         btnK.setMinimumSize(new java.awt.Dimension(42, 42));
         btnK.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnK.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnKActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnK, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, -1, -1));
 
         btnL.setText("L");
@@ -152,6 +192,11 @@ public class GUI extends javax.swing.JFrame {
         btnL.setMaximumSize(new java.awt.Dimension(42, 42));
         btnL.setMinimumSize(new java.awt.Dimension(42, 42));
         btnL.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnL.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnL, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, -1, -1));
 
         btnM.setText("M");
@@ -159,6 +204,11 @@ public class GUI extends javax.swing.JFrame {
         btnM.setMaximumSize(new java.awt.Dimension(42, 42));
         btnM.setMinimumSize(new java.awt.Dimension(42, 42));
         btnM.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnM, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, -1, -1));
 
         btnN.setText("N");
@@ -166,6 +216,11 @@ public class GUI extends javax.swing.JFrame {
         btnN.setMaximumSize(new java.awt.Dimension(42, 42));
         btnN.setMinimumSize(new java.awt.Dimension(42, 42));
         btnN.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnN, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, -1, -1));
 
         btnP.setText("P");
@@ -173,6 +228,11 @@ public class GUI extends javax.swing.JFrame {
         btnP.setMaximumSize(new java.awt.Dimension(42, 42));
         btnP.setMinimumSize(new java.awt.Dimension(42, 42));
         btnP.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnP, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 170, -1, -1));
 
         btnQ.setText("Q");
@@ -180,6 +240,11 @@ public class GUI extends javax.swing.JFrame {
         btnQ.setMaximumSize(new java.awt.Dimension(42, 42));
         btnQ.setMinimumSize(new java.awt.Dimension(42, 42));
         btnQ.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnQ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnQActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnQ, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 170, -1, -1));
 
         btnR.setText("R");
@@ -187,6 +252,11 @@ public class GUI extends javax.swing.JFrame {
         btnR.setMaximumSize(new java.awt.Dimension(42, 42));
         btnR.setMinimumSize(new java.awt.Dimension(42, 42));
         btnR.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnR, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 170, -1, -1));
 
         btnS.setText("S");
@@ -194,6 +264,11 @@ public class GUI extends javax.swing.JFrame {
         btnS.setMaximumSize(new java.awt.Dimension(42, 42));
         btnS.setMinimumSize(new java.awt.Dimension(42, 42));
         btnS.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnS, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 170, -1, -1));
 
         btnT.setText("T");
@@ -202,6 +277,11 @@ public class GUI extends javax.swing.JFrame {
         btnT.setMaximumSize(new java.awt.Dimension(42, 42));
         btnT.setMinimumSize(new java.awt.Dimension(42, 42));
         btnT.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnT, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 170, -1, -1));
 
         btnV.setText("V");
@@ -209,6 +289,11 @@ public class GUI extends javax.swing.JFrame {
         btnV.setMaximumSize(new java.awt.Dimension(42, 42));
         btnV.setMinimumSize(new java.awt.Dimension(42, 42));
         btnV.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnV.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnV, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 230, -1, -1));
 
         btnW.setText("W");
@@ -216,6 +301,11 @@ public class GUI extends javax.swing.JFrame {
         btnW.setMaximumSize(new java.awt.Dimension(42, 42));
         btnW.setMinimumSize(new java.awt.Dimension(42, 42));
         btnW.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnW.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnWActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnW, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 230, -1, -1));
 
         btnX.setText("X");
@@ -223,6 +313,11 @@ public class GUI extends javax.swing.JFrame {
         btnX.setMaximumSize(new java.awt.Dimension(42, 42));
         btnX.setMinimumSize(new java.awt.Dimension(42, 42));
         btnX.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnX.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnXActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnX, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 230, -1, -1));
 
         btnY.setText("Y");
@@ -230,6 +325,11 @@ public class GUI extends javax.swing.JFrame {
         btnY.setMaximumSize(new java.awt.Dimension(42, 42));
         btnY.setMinimumSize(new java.awt.Dimension(42, 42));
         btnY.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnY.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnYActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnY, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 230, -1, -1));
 
         btnZ.setText("Z");
@@ -237,6 +337,11 @@ public class GUI extends javax.swing.JFrame {
         btnZ.setMaximumSize(new java.awt.Dimension(42, 42));
         btnZ.setMinimumSize(new java.awt.Dimension(42, 42));
         btnZ.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnZ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnZActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnZ, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 230, -1, -1));
 
         btnU.setText("U");
@@ -244,6 +349,11 @@ public class GUI extends javax.swing.JFrame {
         btnU.setMaximumSize(new java.awt.Dimension(42, 42));
         btnU.setMinimumSize(new java.awt.Dimension(42, 42));
         btnU.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnU.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnU, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 230, -1, -1));
 
         btnStart.setText("Start Game");
@@ -291,6 +401,11 @@ public class GUI extends javax.swing.JFrame {
         btnO.setMaximumSize(new java.awt.Dimension(42, 42));
         btnO.setMinimumSize(new java.awt.Dimension(42, 42));
         btnO.setPreferredSize(new java.awt.Dimension(46, 46));
+        btnO.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnO, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 170, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -393,8 +508,9 @@ public class GUI extends javax.swing.JFrame {
         btnY.setEnabled(false);
         btnZ.setEnabled(false);
         
-        // reset lblWord
+        // reset lblWord and tries
         lblWord.setText("XXXXXXXXXXXXXXXX");
+        tries = 0;
     }//GEN-LAST:event_btnStopActionPerformed
 
     private void btnAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAActionPerformed
@@ -418,6 +534,144 @@ public class GUI extends javax.swing.JFrame {
         tries++;
         lblTries.setText(tries + " tries");
     }//GEN-LAST:event_btnCActionPerformed
+
+    private void btnDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnDActionPerformed
+
+    private void btnEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnEActionPerformed
+
+    private void btnFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnFActionPerformed
+
+    private void btnGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnGActionPerformed
+
+    private void btnHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnHActionPerformed
+
+    private void btnIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnIActionPerformed
+
+    private void btnJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnJActionPerformed
+
+    private void btnKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnKActionPerformed
+
+    private void btnLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnLActionPerformed
+
+    private void btnMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnMActionPerformed
+
+    private void btnNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnNActionPerformed
+
+    private void btnOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnOActionPerformed
+
+    private void btnPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnPActionPerformed
+
+    private void btnQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnQActionPerformed
+
+    private void btnRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnRActionPerformed
+
+    private void btnSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnSActionPerformed
+
+    private void btnTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnTActionPerformed
+
+    private void btnUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnUActionPerformed
+
+    private void btnVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnVActionPerformed
+
+    private void btnWActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnWActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnWActionPerformed
+
+    private void btnXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnXActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnXActionPerformed
+
+    private void btnYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnYActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnYActionPerformed
+
+    private void btnZActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnZActionPerformed
+        // increase tries counter        
+        tries++;        
+        lblTries.setText(tries + " tries");
+    }//GEN-LAST:event_btnZActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
