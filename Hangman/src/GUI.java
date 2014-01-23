@@ -1,3 +1,4 @@
+import java.awt.Color;
 import java.util.Random;
 
 public class GUI extends javax.swing.JFrame {
@@ -506,6 +507,7 @@ public class GUI extends javax.swing.JFrame {
         
         // reset word and tries
         lblWord.setText("XXXXXXXXXXXXXXXX");
+        lblWord.setForeground(Color.black);
         hiddenWord = "";
         word = "";
         tries = 0;
@@ -749,7 +751,7 @@ public class GUI extends javax.swing.JFrame {
         searchWord('Z');
     }//GEN-LAST:event_btnZActionPerformed
 
-    private String searchWord(char letter){
+    private void searchWord(char letter){
         
         for(int i =0; i<word.length(); i++){
             if (word.charAt(i) == letter){
@@ -759,13 +761,57 @@ public class GUI extends javax.swing.JFrame {
         
         lblWord.setText(hiddenWord);
         
-        return word;
+        //see if word is completely solved
+        boolean isSolved = true;
+        for(int i=0; i<hiddenWord.length(); i++){
+            if (hiddenWord.charAt(i) == '-'){
+                isSolved = false;
+                break;
+            }
+        }
+        if (isSolved == true){
+            gameWon();
+        }
     }
     
     private String changeCharInPosition(int position, char ch, String str){
         char[] charArray = str.toCharArray();
         charArray[position] = ch;
         return new String(charArray);
+    }
+    
+    private void gameWon(){
+        
+        // disable keyboard
+        btnA.setEnabled(false);
+        btnB.setEnabled(false);
+        btnC.setEnabled(false);
+        btnD.setEnabled(false);
+        btnE.setEnabled(false);
+        btnF.setEnabled(false);
+        btnG.setEnabled(false);
+        btnH.setEnabled(false);
+        btnI.setEnabled(false);
+        btnJ.setEnabled(false);
+        btnK.setEnabled(false);
+        btnL.setEnabled(false);
+        btnM.setEnabled(false);
+        btnN.setEnabled(false);
+        btnO.setEnabled(false);
+        btnP.setEnabled(false);
+        btnQ.setEnabled(false);
+        btnR.setEnabled(false);
+        btnS.setEnabled(false);
+        btnT.setEnabled(false);
+        btnU.setEnabled(false);
+        btnV.setEnabled(false);
+        btnW.setEnabled(false);
+        btnX.setEnabled(false);
+        btnY.setEnabled(false);
+        btnZ.setEnabled(false);
+        
+        lblWord.setForeground(Color.green);
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
