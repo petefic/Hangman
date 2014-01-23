@@ -516,6 +516,9 @@ public class GUI extends javax.swing.JFrame {
 
     private void btnAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAActionPerformed
         
+        // disable button
+        btnA.setEnabled(false);
+        
         // increase tries counter
         tries++;
         lblTries.setText(tries + " tries");
@@ -526,6 +529,9 @@ public class GUI extends javax.swing.JFrame {
 
     private void btnBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBActionPerformed
                 
+        // disable button
+        btnB.setEnabled(false);
+        
         // increase tries counter
         tries++;
         lblTries.setText(tries + " tries");
@@ -536,6 +542,9 @@ public class GUI extends javax.swing.JFrame {
 
     private void btnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCActionPerformed
                 
+        // disable button
+        btnC.setEnabled(false);
+        
         // increase tries counter
         tries++;
         lblTries.setText(tries + " tries");
@@ -545,6 +554,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCActionPerformed
 
     private void btnDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDActionPerformed
+        
+        // disable button
+        btnD.setEnabled(false);
+
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -554,6 +567,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDActionPerformed
 
     private void btnEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEActionPerformed
+        
+        // disable button
+        btnE.setEnabled(false);
+
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -563,6 +580,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnEActionPerformed
 
     private void btnFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFActionPerformed
+        
+        // disable button
+        btnF.setEnabled(false);
+
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -572,6 +593,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnFActionPerformed
 
     private void btnGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGActionPerformed
+        
+        // disable button
+        btnG.setEnabled(false);
+
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -581,6 +606,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnGActionPerformed
 
     private void btnHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHActionPerformed
+        
+        // disable button
+        btnH.setEnabled(false);
+
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -590,6 +619,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnHActionPerformed
 
     private void btnIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIActionPerformed
+        
+        // disable button
+        btnI.setEnabled(false);
+
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -599,6 +632,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnIActionPerformed
 
     private void btnJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJActionPerformed
+        
+        // disable button
+        btnJ.setEnabled(false);
+        
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -608,6 +645,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnJActionPerformed
 
     private void btnKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKActionPerformed
+        
+        // disable button
+        btnK.setEnabled(false);
+        
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -617,6 +658,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnKActionPerformed
 
     private void btnLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLActionPerformed
+        
+        // disable button
+        btnL.setEnabled(false);
+        
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -626,6 +671,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnLActionPerformed
 
     private void btnMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMActionPerformed
+        
+        // disable button
+        btnM.setEnabled(false);
+
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -635,6 +684,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnMActionPerformed
 
     private void btnNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNActionPerformed
+        
+        // disable button
+        btnN.setEnabled(false);
+
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -644,6 +697,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnNActionPerformed
 
     private void btnOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOActionPerformed
+        
+        // disable button
+        btnO.setEnabled(false);
+        
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -653,6 +710,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnOActionPerformed
 
     private void btnPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPActionPerformed
+        
+        // disable button
+        btnP.setEnabled(false);
+
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -662,6 +723,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPActionPerformed
 
     private void btnQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQActionPerformed
+        
+        // disable button
+        btnQ.setEnabled(false);
+        
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -671,6 +736,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnQActionPerformed
 
     private void btnRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRActionPerformed
+        
+        // disable button
+        btnR.setEnabled(false);
+
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -680,6 +749,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRActionPerformed
 
     private void btnSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSActionPerformed
+        
+        // disable button
+        btnS.setEnabled(false);
+        
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -689,6 +762,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSActionPerformed
 
     private void btnTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTActionPerformed
+        
+        // disable button
+        btnT.setEnabled(false);
+
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -698,6 +775,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnTActionPerformed
 
     private void btnUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUActionPerformed
+        
+        // disable button
+        btnU.setEnabled(false);
+        
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -707,6 +788,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnUActionPerformed
 
     private void btnVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVActionPerformed
+        
+        // disable button
+        btnV.setEnabled(false);
+
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -716,6 +801,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnVActionPerformed
 
     private void btnWActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnWActionPerformed
+        
+        // disable button
+        btnW.setEnabled(false);
+
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -725,6 +814,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnWActionPerformed
 
     private void btnXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnXActionPerformed
+        
+        // disable button
+        btnX.setEnabled(false);
+
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -734,6 +827,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnXActionPerformed
 
     private void btnYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnYActionPerformed
+        
+        // disable button
+        btnY.setEnabled(false);
+        
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
@@ -743,6 +840,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnYActionPerformed
 
     private void btnZActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnZActionPerformed
+        
+        // disable button
+        btnZ.setEnabled(false);
+        
         // increase tries counter        
         tries++;        
         lblTries.setText(tries + " tries");
