@@ -425,32 +425,7 @@ public class GUI extends javax.swing.JFrame {
         
         // enable tries counter and keyboard
         lblTries.setVisible(true);
-        btnA.setEnabled(true);
-        btnB.setEnabled(true);
-        btnC.setEnabled(true);
-        btnD.setEnabled(true);
-        btnE.setEnabled(true);
-        btnF.setEnabled(true);
-        btnG.setEnabled(true);
-        btnH.setEnabled(true);
-        btnI.setEnabled(true);
-        btnJ.setEnabled(true);
-        btnK.setEnabled(true);
-        btnL.setEnabled(true);
-        btnM.setEnabled(true);
-        btnN.setEnabled(true);
-        btnO.setEnabled(true);
-        btnP.setEnabled(true);
-        btnQ.setEnabled(true);
-        btnR.setEnabled(true);
-        btnS.setEnabled(true);
-        btnT.setEnabled(true);
-        btnU.setEnabled(true);
-        btnV.setEnabled(true);
-        btnW.setEnabled(true);
-        btnX.setEnabled(true);
-        btnY.setEnabled(true);
-        btnZ.setEnabled(true);
+        enableKeyboard(true);
         
         // array of possible words
         String[] words = {"PROGRAMMING", "OAKLAND", "UNIVERSITY", "SOFTWARE", "ENGINEERING"};
@@ -478,32 +453,7 @@ public class GUI extends javax.swing.JFrame {
         lblTries.setVisible(false);
         
         // disable keyboard
-        btnA.setEnabled(false);
-        btnB.setEnabled(false);
-        btnC.setEnabled(false);
-        btnD.setEnabled(false);
-        btnE.setEnabled(false);
-        btnF.setEnabled(false);
-        btnG.setEnabled(false);
-        btnH.setEnabled(false);
-        btnI.setEnabled(false);
-        btnJ.setEnabled(false);
-        btnK.setEnabled(false);
-        btnL.setEnabled(false);
-        btnM.setEnabled(false);
-        btnN.setEnabled(false);
-        btnO.setEnabled(false);
-        btnP.setEnabled(false);
-        btnQ.setEnabled(false);
-        btnR.setEnabled(false);
-        btnS.setEnabled(false);
-        btnT.setEnabled(false);
-        btnU.setEnabled(false);
-        btnV.setEnabled(false);
-        btnW.setEnabled(false);
-        btnX.setEnabled(false);
-        btnY.setEnabled(false);
-        btnZ.setEnabled(false);
+        enableKeyboard(false);
         
         // reset word and tries
         lblWord.setText("XXXXXXXXXXXXXXXX");
@@ -879,6 +829,36 @@ public class GUI extends javax.swing.JFrame {
         char[] charArray = str.toCharArray();
         charArray[position] = ch;
         return new String(charArray);
+    }
+    
+    private void enableKeyboard(boolean bool){
+        
+        btnA.setEnabled(bool);
+        btnB.setEnabled(bool);
+        btnC.setEnabled(bool);
+        btnD.setEnabled(bool);
+        btnE.setEnabled(bool);
+        btnF.setEnabled(bool);
+        btnG.setEnabled(bool);
+        btnH.setEnabled(bool);
+        btnI.setEnabled(bool);
+        btnJ.setEnabled(bool);
+        btnK.setEnabled(bool);
+        btnL.setEnabled(bool);
+        btnM.setEnabled(bool);
+        btnN.setEnabled(bool);
+        btnO.setEnabled(bool);
+        btnP.setEnabled(bool);
+        btnQ.setEnabled(bool);
+        btnR.setEnabled(bool);
+        btnS.setEnabled(bool);
+        btnT.setEnabled(bool);
+        btnU.setEnabled(bool);
+        btnV.setEnabled(bool);
+        btnW.setEnabled(bool);
+        btnX.setEnabled(bool);
+        btnY.setEnabled(bool);
+        btnZ.setEnabled(bool); 
     }
     
     private void gameWon(){
