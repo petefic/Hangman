@@ -1,3 +1,4 @@
+
 import java.awt.Color;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -428,37 +429,37 @@ public class GUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStartActionPerformed
-        
+
         // enable tries counter and keyboard
         lblTries.setVisible(true);
         enableKeyboard(true);
-       
+
         // get word to solve for
         word = getWord();
-        
+
         System.out.println(word);
-        
+
         // set up lblWord
-        for(int i=0; i<word.length(); i++){
-            hiddenWord+= "-";
+        for (int i = 0; i < word.length(); i++) {
+            hiddenWord += "-";
         }
         lblWord.setText(hiddenWord);
-        
+
         // hide start button, show stop button
         btnStart.setVisible(false);
         btnStop.setVisible(true);
     }//GEN-LAST:event_btnStartActionPerformed
 
     private void btnStopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStopActionPerformed
-        
+
         // hide stop button, tries and show start button
         btnStart.setVisible(true);
         btnStop.setVisible(false);
         lblTries.setVisible(false);
-        
+
         // disable keyboard
         enableKeyboard(false);
-        
+
         // reset word and tries
         lblWord.setText("XXXXXXXXXXXXXXXX");
         lblWord.setForeground(Color.black);
@@ -469,374 +470,374 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnStopActionPerformed
 
     private void btnAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAActionPerformed
-        
+
         // disable button
         btnA.setEnabled(false);
-        
+
         // increase tries counter
         tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
-        searchWord('A');       
+        searchWord('A');
     }//GEN-LAST:event_btnAActionPerformed
 
     private void btnBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBActionPerformed
-                
+
         // disable button
         btnB.setEnabled(false);
-        
+
         // increase tries counter
         tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('B');
     }//GEN-LAST:event_btnBActionPerformed
 
     private void btnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCActionPerformed
-                
+
         // disable button
         btnC.setEnabled(false);
-        
+
         // increase tries counter
         tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
-        searchWord('C');        
+        searchWord('C');
     }//GEN-LAST:event_btnCActionPerformed
 
     private void btnDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDActionPerformed
-        
+
         // disable button
         btnD.setEnabled(false);
 
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('D');
     }//GEN-LAST:event_btnDActionPerformed
 
     private void btnEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEActionPerformed
-        
+
         // disable button
         btnE.setEnabled(false);
 
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('E');
     }//GEN-LAST:event_btnEActionPerformed
 
     private void btnFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFActionPerformed
-        
+
         // disable button
         btnF.setEnabled(false);
 
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('F');
     }//GEN-LAST:event_btnFActionPerformed
 
     private void btnGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGActionPerformed
-        
+
         // disable button
         btnG.setEnabled(false);
 
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('G');
     }//GEN-LAST:event_btnGActionPerformed
 
     private void btnHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHActionPerformed
-        
+
         // disable button
         btnH.setEnabled(false);
 
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('H');
     }//GEN-LAST:event_btnHActionPerformed
 
     private void btnIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIActionPerformed
-        
+
         // disable button
         btnI.setEnabled(false);
 
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('I');
     }//GEN-LAST:event_btnIActionPerformed
 
     private void btnJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJActionPerformed
-        
+
         // disable button
         btnJ.setEnabled(false);
-        
+
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('J');
     }//GEN-LAST:event_btnJActionPerformed
 
     private void btnKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKActionPerformed
-        
+
         // disable button
         btnK.setEnabled(false);
-        
+
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('K');
     }//GEN-LAST:event_btnKActionPerformed
 
     private void btnLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLActionPerformed
-        
+
         // disable button
         btnL.setEnabled(false);
-        
+
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('L');
     }//GEN-LAST:event_btnLActionPerformed
 
     private void btnMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMActionPerformed
-        
+
         // disable button
         btnM.setEnabled(false);
 
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('M');
     }//GEN-LAST:event_btnMActionPerformed
 
     private void btnNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNActionPerformed
-        
+
         // disable button
         btnN.setEnabled(false);
 
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('N');
     }//GEN-LAST:event_btnNActionPerformed
 
     private void btnOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOActionPerformed
-        
+
         // disable button
         btnO.setEnabled(false);
-        
+
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('O');
     }//GEN-LAST:event_btnOActionPerformed
 
     private void btnPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPActionPerformed
-        
+
         // disable button
         btnP.setEnabled(false);
 
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('P');
     }//GEN-LAST:event_btnPActionPerformed
 
     private void btnQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQActionPerformed
-        
+
         // disable button
         btnQ.setEnabled(false);
-        
+
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('Q');
     }//GEN-LAST:event_btnQActionPerformed
 
     private void btnRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRActionPerformed
-        
+
         // disable button
         btnR.setEnabled(false);
 
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('R');
     }//GEN-LAST:event_btnRActionPerformed
 
     private void btnSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSActionPerformed
-        
+
         // disable button
         btnS.setEnabled(false);
-        
+
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('S');
     }//GEN-LAST:event_btnSActionPerformed
 
     private void btnTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTActionPerformed
-        
+
         // disable button
         btnT.setEnabled(false);
 
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('T');
     }//GEN-LAST:event_btnTActionPerformed
 
     private void btnUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUActionPerformed
-        
+
         // disable button
         btnU.setEnabled(false);
-        
+
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('U');
     }//GEN-LAST:event_btnUActionPerformed
 
     private void btnVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVActionPerformed
-        
+
         // disable button
         btnV.setEnabled(false);
 
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('V');
     }//GEN-LAST:event_btnVActionPerformed
 
     private void btnWActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnWActionPerformed
-        
+
         // disable button
         btnW.setEnabled(false);
 
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('W');
     }//GEN-LAST:event_btnWActionPerformed
 
     private void btnXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnXActionPerformed
-        
+
         // disable button
         btnX.setEnabled(false);
 
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('X');
     }//GEN-LAST:event_btnXActionPerformed
 
     private void btnYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnYActionPerformed
-        
+
         // disable button
         btnY.setEnabled(false);
-        
+
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('Y');
     }//GEN-LAST:event_btnYActionPerformed
 
     private void btnZActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnZActionPerformed
-        
+
         // disable button
         btnZ.setEnabled(false);
-        
+
         // increase tries counter        
-        tries++;        
+        tries++;
         lblTries.setText(tries + " tries");
-        
+
         //search word for letter
         searchWord('Z');
     }//GEN-LAST:event_btnZActionPerformed
 
-    private void searchWord(char letter){
-        
-        for(int i =0; i<word.length(); i++){
-            if (word.charAt(i) == letter){
+    private void searchWord(char letter) {
+
+        for (int i = 0; i < word.length(); i++) {
+            if (word.charAt(i) == letter) {
                 hiddenWord = changeCharInPosition(i, letter, hiddenWord);
             }
         }
-        
+
         lblWord.setText(hiddenWord);
-        
+
         //see if word is completely solved
         boolean isSolved = true;
-        for(int i=0; i<hiddenWord.length(); i++){
-            if (hiddenWord.charAt(i) == '-'){
+        for (int i = 0; i < hiddenWord.length(); i++) {
+            if (hiddenWord.charAt(i) == '-') {
                 isSolved = false;
                 break;
             }
         }
-        if (isSolved == true){
+        if (isSolved == true) {
             gameWon();
         }
     }
-    
-    private String changeCharInPosition(int position, char ch, String str){
+
+    private String changeCharInPosition(int position, char ch, String str) {
         char[] charArray = str.toCharArray();
         charArray[position] = ch;
         return new String(charArray);
     }
-    
-    private void enableKeyboard(boolean bool){
-        
+
+    private void enableKeyboard(boolean bool) {
+
         btnA.setEnabled(bool);
         btnB.setEnabled(bool);
         btnC.setEnabled(bool);
@@ -862,21 +863,21 @@ public class GUI extends javax.swing.JFrame {
         btnW.setEnabled(bool);
         btnX.setEnabled(bool);
         btnY.setEnabled(bool);
-        btnZ.setEnabled(bool); 
+        btnZ.setEnabled(bool);
     }
-    
-    private void gameWon(){
-        
+
+    private void gameWon() {
+
         // disable keyboard
         enableKeyboard(false);
-        
+
         // set word color to green
         lblWord.setForeground(Color.green);
-        
+
     }
-    
-    private String getWord(){
-        
+
+    private String getWord() {
+
         String urlStr = "http://randomword.setgetgo.com/get.php";
         String randomWord = "";
         try {
@@ -887,45 +888,45 @@ public class GUI extends javax.swing.JFrame {
             randomWord = getStringFromInputStream(is);
             randomWord = randomWord.toUpperCase();
             System.out.println(randomWord);
-            
+
         } catch (IOException e) {
             System.err.println("Caught IOException: " + e.getMessage());
         }
-        
+
         System.out.println(randomWord);
-        
-        return randomWord;        
+
+        return randomWord;
     }
-    
+
     // convert InputStream to String
-	private static String getStringFromInputStream(InputStream is) {
- 
-		BufferedReader br = null;
-		StringBuilder sb = new StringBuilder();
- 
-		String line;
-		try {
- 
-			br = new BufferedReader(new InputStreamReader(is));
-			while ((line = br.readLine()) != null) {
-				sb.append(line);
-			}
- 
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			if (br != null) {
-				try {
-					br.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-		}
- 
-		return sb.toString();
- 
-	}
+    private static String getStringFromInputStream(InputStream is) {
+
+        BufferedReader br = null;
+        StringBuilder sb = new StringBuilder();
+
+        String line;
+        try {
+
+            br = new BufferedReader(new InputStreamReader(is));
+            while ((line = br.readLine()) != null) {
+                sb.append(line);
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        return sb.toString();
+
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnA;
@@ -966,4 +967,3 @@ public class GUI extends javax.swing.JFrame {
     private String word = "";
     private int tries = 0;
 }
-
