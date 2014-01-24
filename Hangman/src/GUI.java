@@ -864,32 +864,7 @@ public class GUI extends javax.swing.JFrame {
     private void gameWon(){
         
         // disable keyboard
-        btnA.setEnabled(false);
-        btnB.setEnabled(false);
-        btnC.setEnabled(false);
-        btnD.setEnabled(false);
-        btnE.setEnabled(false);
-        btnF.setEnabled(false);
-        btnG.setEnabled(false);
-        btnH.setEnabled(false);
-        btnI.setEnabled(false);
-        btnJ.setEnabled(false);
-        btnK.setEnabled(false);
-        btnL.setEnabled(false);
-        btnM.setEnabled(false);
-        btnN.setEnabled(false);
-        btnO.setEnabled(false);
-        btnP.setEnabled(false);
-        btnQ.setEnabled(false);
-        btnR.setEnabled(false);
-        btnS.setEnabled(false);
-        btnT.setEnabled(false);
-        btnU.setEnabled(false);
-        btnV.setEnabled(false);
-        btnW.setEnabled(false);
-        btnX.setEnabled(false);
-        btnY.setEnabled(false);
-        btnZ.setEnabled(false);
+        enableKeyboard(false);
         
         lblWord.setForeground(Color.green);
         
