@@ -2,7 +2,6 @@
 import java.awt.Color;
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.Random;
 import java.net.URL;
 import java.net.URLConnection;
 import java.io.InputStream;
