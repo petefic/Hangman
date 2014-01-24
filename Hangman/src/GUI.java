@@ -1,5 +1,11 @@
 import java.awt.Color;
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.util.Random;
+import java.net.URL;
+import java.net.URLConnection;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class GUI extends javax.swing.JFrame {
 
@@ -426,13 +432,11 @@ public class GUI extends javax.swing.JFrame {
         // enable tries counter and keyboard
         lblTries.setVisible(true);
         enableKeyboard(true);
+       
+        // get word to solve for
+        word = getWord();
         
-        // array of possible words
-        String[] words = {"PROGRAMMING", "OAKLAND", "UNIVERSITY", "SOFTWARE", "ENGINEERING"};
-        
-        //choose random word from list
-        Random gen = new Random();
-        word = words[gen.nextInt(4)];
+        System.out.println(word);
         
         // set up lblWord
         for(int i=0; i<word.length(); i++){
@@ -866,9 +870,62 @@ public class GUI extends javax.swing.JFrame {
         // disable keyboard
         enableKeyboard(false);
         
+        // set word color to green
         lblWord.setForeground(Color.green);
         
     }
+    
+    private String getWord(){
+        
+        String urlStr = "http://randomword.setgetgo.com/get.php";
+        String randomWord = "";
+        try {
+            URL url = new URL(urlStr);
+            URLConnection conn = url.openConnection();
+            conn.connect();
+            InputStream is = conn.getInputStream();
+            randomWord = getStringFromInputStream(is);
+            randomWord = randomWord.toUpperCase();
+            System.out.println(randomWord);
+            
+        } catch (IOException e) {
+            System.err.println("Caught IOException: " + e.getMessage());
+        }
+        
+        System.out.println(randomWord);
+        
+        return randomWord;        
+    }
+    
+    // convert InputStream to String
+	private static String getStringFromInputStream(InputStream is) {
+ 
+		BufferedReader br = null;
+		StringBuilder sb = new StringBuilder();
+ 
+		String line;
+		try {
+ 
+			br = new BufferedReader(new InputStreamReader(is));
+			while ((line = br.readLine()) != null) {
+				sb.append(line);
+			}
+ 
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			if (br != null) {
+				try {
+					br.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+ 
+		return sb.toString();
+ 
+	}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnA;
