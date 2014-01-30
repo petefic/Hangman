@@ -8,11 +8,11 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 public class GUI extends javax.swing.JFrame {
-    
+
     public GUI() {
         initComponents();
     }
-    
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -435,7 +435,7 @@ public class GUI extends javax.swing.JFrame {
 
         // get word to solve for
         word = getWord();
-        
+
         System.out.println(word);
 
         // set up lblWord
@@ -701,9 +701,9 @@ public class GUI extends javax.swing.JFrame {
         //search word for letter
         searchWord('Z');
     }//GEN-LAST:event_btnZActionPerformed
-    
+
     private void searchWord(char letter) {
-        
+
         boolean letterFound = false;
 
         // search word for chosen letter
@@ -713,7 +713,7 @@ public class GUI extends javax.swing.JFrame {
                 letterFound = true;
             }
         }
-        
+
         if (letterFound == true) {
             // update label
             lblWord.setText(hiddenWord);
@@ -733,15 +733,15 @@ public class GUI extends javax.swing.JFrame {
             wrongGuess();
         }
     }
-    
+
     private String changeCharInPosition(int position, char ch, String str) {
         char[] charArray = str.toCharArray();
         charArray[position] = ch;
         return new String(charArray);
     }
-    
+
     private void enableKeyboard(boolean bool) {
-        
+
         btnA.setEnabled(bool);
         btnB.setEnabled(bool);
         btnC.setEnabled(bool);
@@ -769,7 +769,7 @@ public class GUI extends javax.swing.JFrame {
         btnY.setEnabled(bool);
         btnZ.setEnabled(bool);
     }
-    
+
     private void gameWon() {
 
         // disable keyboard
@@ -777,45 +777,49 @@ public class GUI extends javax.swing.JFrame {
 
         // set word color to green
         lblWord.setForeground(Color.green);
-        
+
     }
-    
+
     private String getWord() {
-        
+
         String urlStr = "http://randomword.setgetgo.com/get.php";
         String randomWord = "";
-        try {
-            URL url = new URL(urlStr);
-            URLConnection conn = url.openConnection();
-            conn.connect();
-            InputStream is = conn.getInputStream();
-            randomWord = getStringFromInputStream(is);
-            randomWord = randomWord.toUpperCase();
-            System.out.println(randomWord);
-            
-        } catch (IOException e) {
-            System.err.println("Caught IOException: " + e.getMessage());
+
+        //keep getting words until we get one that is the correct length
+        while (randomWord.length() < 5 || randomWord.length() > 10) {
+            try {
+                URL url = new URL(urlStr);
+                URLConnection conn = url.openConnection();
+                conn.connect();
+                InputStream is = conn.getInputStream();
+                randomWord = getStringFromInputStream(is);
+                randomWord = randomWord.toUpperCase();
+                System.out.println(randomWord);
+
+            } catch (IOException e) {
+                System.err.println("Caught IOException: " + e.getMessage());
+            }
+
         }
-        
-        System.out.println(randomWord);
-        
+
         return randomWord;
+
     }
 
     // convert InputStream to String
     private static String getStringFromInputStream(InputStream is) {
-        
+
         BufferedReader br = null;
         StringBuilder sb = new StringBuilder();
-        
+
         String line;
         try {
-            
+
             br = new BufferedReader(new InputStreamReader(is));
             while ((line = br.readLine()) != null) {
                 sb.append(line);
             }
-            
+
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -827,13 +831,13 @@ public class GUI extends javax.swing.JFrame {
                 }
             }
         }
-        
+
         return sb.toString();
-        
+
     }
-    
+
     private void wrongGuess() {
-        
+
         triesRemaining--;
         lblTries.setText(triesRemaining + " Tries Remaining");
 
@@ -842,7 +846,7 @@ public class GUI extends javax.swing.JFrame {
             lblTries.setForeground(Color.red);
             enableKeyboard(false);
         }
-        
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
