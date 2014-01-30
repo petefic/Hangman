@@ -368,11 +368,11 @@ public class GUI extends javax.swing.JFrame {
         jPanel1.add(btnStart, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, -1));
 
         lblTries.setBackground(new java.awt.Color(153, 153, 153));
-        lblTries.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        lblTries.setText("0 tries");
+        lblTries.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblTries.setText("6 Tries Remaining");
         lblTries.setOpaque(true);
         lblTries.setVisible(false);
-        jPanel1.add(lblTries, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+        jPanel1.add(lblTries, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 290, -1, -1));
 
         jPanel2.setLayout(new java.awt.BorderLayout());
 
